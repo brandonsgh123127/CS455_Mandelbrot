@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/joel/CLionProjects/simpleGraphics/graphics_utilities.h
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/joel/CLionProjects/simpleGraphics/main.c
+stdio.h
+-
+graphics_utilities.h
+/home/joel/CLionProjects/simpleGraphics/graphics_utilities.h
+xwindows_utilities.h
+/home/joel/CLionProjects/simpleGraphics/xwindows_utilities.h
+
+/home/joel/CLionProjects/simpleGraphics/xwindows_utilities.h
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+X11/Xos.h
+-
+stdlib.h
+-
+math.h
+-
+graphics_utilities.h
+/home/joel/CLionProjects/simpleGraphics/graphics_utilities.h
+

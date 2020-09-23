@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/spada/CLionProjects/CS455_Mandelbrot/main.c
+stdio.h
+-
+unistd.h
+-
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+mandelbrot.h
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+mandelbrot.h
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
+complex.h
+-
+

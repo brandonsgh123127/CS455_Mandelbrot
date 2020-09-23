@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/joel/CLionProjects/mandelbrot/graphics_utilities.c" "/home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
-  "/home/joel/CLionProjects/mandelbrot/main.c" "/home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/main.c.o"
-  "/home/joel/CLionProjects/mandelbrot/mandelbrot.c" "/home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
+  "/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c" "/home/spada/CLionProjects/CS455_Mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
+  "/home/spada/CLionProjects/CS455_Mandelbrot/main.c" "/home/spada/CLionProjects/CS455_Mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/main.c.o"
+  "/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c" "/home/spada/CLionProjects/CS455_Mandelbrot/cmake-build-debug/CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

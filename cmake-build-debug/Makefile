@@ -68,24 +68,13 @@ RM = /home/joel/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/CLionProjects/mandelbrot
+CMAKE_SOURCE_DIR = /home/joel/CLionProjects/simpleGraphics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/CLionProjects/mandelbrot/cmake-build-debug
+CMAKE_BINARY_DIR = /home/joel/CLionProjects/simpleGraphics/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/joel/clion-2020.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -98,11 +87,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/joel/clion-2020.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles /home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/CLionProjects/simpleGraphics/cmake-build-debug/CMakeFiles /home/joel/CLionProjects/simpleGraphics/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/CLionProjects/mandelbrot/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/CLionProjects/simpleGraphics/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mandelbrot
+# Target rules for targets named simpleGraphics
 
 # Build rule for target.
-mandelbrot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mandelbrot
-.PHONY : mandelbrot
+simpleGraphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simpleGraphics
+.PHONY : simpleGraphics
 
 # fast build rule for target.
-mandelbrot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
-.PHONY : mandelbrot/fast
+simpleGraphics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/build
+.PHONY : simpleGraphics/fast
 
 graphics_utilities.o: graphics_utilities.c.o
 
@@ -149,7 +149,7 @@ graphics_utilities.o: graphics_utilities.c.o
 
 # target to build an object file
 graphics_utilities.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o
 .PHONY : graphics_utilities.c.o
 
 graphics_utilities.i: graphics_utilities.c.i
@@ -158,7 +158,7 @@ graphics_utilities.i: graphics_utilities.c.i
 
 # target to preprocess a source file
 graphics_utilities.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/graphics_utilities.c.i
 .PHONY : graphics_utilities.c.i
 
 graphics_utilities.s: graphics_utilities.c.s
@@ -167,7 +167,7 @@ graphics_utilities.s: graphics_utilities.c.s
 
 # target to generate assembly for a file
 graphics_utilities.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/graphics_utilities.c.s
 .PHONY : graphics_utilities.c.s
 
 main.o: main.c.o
@@ -176,7 +176,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -185,7 +185,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -194,35 +194,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/main.c.s
 .PHONY : main.c.s
 
-mandelbrot.o: mandelbrot.c.o
+xwindows_utilities.o: xwindows_utilities.c.o
 
-.PHONY : mandelbrot.o
+.PHONY : xwindows_utilities.o
 
 # target to build an object file
-mandelbrot.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.o
-.PHONY : mandelbrot.c.o
+xwindows_utilities.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o
+.PHONY : xwindows_utilities.c.o
 
-mandelbrot.i: mandelbrot.c.i
+xwindows_utilities.i: xwindows_utilities.c.i
 
-.PHONY : mandelbrot.i
+.PHONY : xwindows_utilities.i
 
 # target to preprocess a source file
-mandelbrot.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.i
-.PHONY : mandelbrot.c.i
+xwindows_utilities.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.i
+.PHONY : xwindows_utilities.c.i
 
-mandelbrot.s: mandelbrot.c.s
+xwindows_utilities.s: xwindows_utilities.c.s
 
-.PHONY : mandelbrot.s
+.PHONY : xwindows_utilities.s
 
 # target to generate assembly for a file
-mandelbrot.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.s
-.PHONY : mandelbrot.c.s
+xwindows_utilities.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simpleGraphics.dir/build.make CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.s
+.PHONY : xwindows_utilities.c.s
 
 # Help Target
 help:
@@ -232,16 +232,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mandelbrot"
+	@echo "... simpleGraphics"
 	@echo "... graphics_utilities.o"
 	@echo "... graphics_utilities.i"
 	@echo "... graphics_utilities.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mandelbrot.o"
-	@echo "... mandelbrot.i"
-	@echo "... mandelbrot.s"
+	@echo "... xwindows_utilities.o"
+	@echo "... xwindows_utilities.i"
+	@echo "... xwindows_utilities.s"
 .PHONY : help
 
 

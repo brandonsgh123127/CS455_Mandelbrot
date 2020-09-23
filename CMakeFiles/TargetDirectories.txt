@@ -1,0 +1,3 @@
+/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/rebuild_cache.dir
+/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir
+/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/edit_cache.dir

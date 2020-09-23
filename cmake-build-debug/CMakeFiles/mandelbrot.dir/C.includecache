@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joel/CLionProjects/mandelbrot/graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
 math.h
 -
 stdio.h
@@ -16,17 +16,25 @@ stdlib.h
 string.h
 -
 
-/home/joel/CLionProjects/mandelbrot/main.c
+/home/spada/CLionProjects/CS455_Mandelbrot/main.c
 stdio.h
 -
-unistd.h
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+xwindows_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+X11/Xos.h
+-
+stdlib.h
+-
+math.h
 -
 graphics_utilities.h
-/home/joel/CLionProjects/mandelbrot/graphics_utilities.h
-mandelbrot.h
-/home/joel/CLionProjects/mandelbrot/mandelbrot.h
-
-/home/joel/CLionProjects/mandelbrot/mandelbrot.h
-complex.h
--
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
 

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/mandelbrot.dir/main.c.o CMakeFiles/mandelbrot.dir/graphics_utilities.c.o CMakeFiles/mandelbrot.dir/mandelbrot.c.o  -o mandelbrot -lm 

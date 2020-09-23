@@ -24,9 +24,6 @@ typedef struct rgb_image {
 
 void hsv_to_rgb(int hue, int min, int max, rgb_t *p);
 
-void write_rgb_file(char *filename,rgb_image_t *image);
-void write_rgb_pipe(rgb_image_t *image);
-
 rgb_image_t * read_ppm_rgb_file(char *file);
 rgb_image_t * read_ppm_rgb_pipe();
 rgb_image_t *read_ppm_rgb_mandy();
