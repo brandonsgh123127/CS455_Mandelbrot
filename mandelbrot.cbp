@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="simpleGraphics"/>
+		<Option title="mandelbrot"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -12,16 +12,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/spada/CLionProjects/CS455_Mandelbrot"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,24 +27,18 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="simpleGraphics">
-				<Option output="/home/spada/CLionProjects/CS455_Mandelbrot/simpleGraphics" prefix_auto="0" extension_auto="0"/>
+			<Target title="rebuild_cache">
 				<Option working_dir="/home/spada/CLionProjects/CS455_Mandelbrot"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/X11"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 simpleGraphics"/>
+					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="simpleGraphics/fast">
-				<Option output="/home/spada/CLionProjects/CS455_Mandelbrot/simpleGraphics" prefix_auto="0" extension_auto="0"/>
+			<Target title="mandelbrot">
+				<Option output="/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/spada/CLionProjects/CS455_Mandelbrot"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,7 +47,23 @@
 					<Add directory="/usr/include/X11"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 simpleGraphics/fast"/>
+					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 mandelbrot"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mandelbrot/fast">
+				<Option output="/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/spada/CLionProjects/CS455_Mandelbrot"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/X11"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 mandelbrot/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/spada/CLionProjects/CS455_Mandelbrot/Makefile&quot;  VERBOSE=1 clean"/>
@@ -71,19 +71,25 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c">
-			<Option target="simpleGraphics"/>
+			<Option target="mandelbrot"/>
 		</Unit>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h">
-			<Option target="simpleGraphics"/>
+			<Option target="mandelbrot"/>
 		</Unit>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/main.c">
-			<Option target="simpleGraphics"/>
+			<Option target="mandelbrot"/>
+		</Unit>
+		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c">
+			<Option target="mandelbrot"/>
+		</Unit>
+		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h">
+			<Option target="mandelbrot"/>
 		</Unit>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c">
-			<Option target="simpleGraphics"/>
+			<Option target="mandelbrot"/>
 		</Unit>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h">
-			<Option target="simpleGraphics"/>
+			<Option target="mandelbrot"/>
 		</Unit>
 		<Unit filename="/home/spada/CLionProjects/CS455_Mandelbrot/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/usr/include/X11 
+C_INCLUDES = -I/usr/include/X11 -I/home/spada/CLionProjects/graphics -I/home/spada/CLionProjects/simpleGraphics 
 

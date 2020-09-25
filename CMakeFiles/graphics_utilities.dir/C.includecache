@@ -16,16 +16,6 @@ stdlib.h
 string.h
 -
 
-/home/spada/CLionProjects/CS455_Mandelbrot/main.c
-stdio.h
--
-unistd.h
--
-graphics_utilities.h
-/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
-mandelbrot.h
-/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
-
 /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c
 graphics_utilities.h
 /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
@@ -41,4 +31,22 @@ argp.h
 /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
 complex.h
 -
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+xwindows_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+X11/Xos.h
+-
+stdlib.h
+-
+math.h
+-
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
 

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o"
   "/home/spada/CLionProjects/CS455_Mandelbrot/main.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir/main.c.o"
+  "/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir/mandelbrot.c.o"
   "/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

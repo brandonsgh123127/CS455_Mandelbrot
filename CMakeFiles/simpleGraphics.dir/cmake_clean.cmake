@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/simpleGraphics.dir/main.c.o"
   "CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o"
+  "CMakeFiles/simpleGraphics.dir/main.c.o"
+  "CMakeFiles/simpleGraphics.dir/mandelbrot.c.o"
   "CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o"
-  "simpleGraphics.pdb"
   "simpleGraphics"
+  "simpleGraphics.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/spada/CLionProjects/CS455_Mandelbrot
+# Install script for directory: /home/spada/CLionProjects/Mandelbrot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/spada/CLionProjects/CS455_Mandelbrot/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/spada/CLionProjects/Mandelbrot/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

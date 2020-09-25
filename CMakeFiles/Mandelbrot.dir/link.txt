@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/Mandelbrot.dir/mandelbrot.c.o  -o Mandelbrot 

@@ -7,11 +7,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
   "/home/spada/CLionProjects/CS455_Mandelbrot/main.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/mandelbrot.dir/main.c.o"
   "/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
+  "/home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c" "/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/X11"
   )
 
 # Targets to which this target links.
