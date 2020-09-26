@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,libMandelbrotLib.so -o libMandelbrotLib.so CMakeFiles/MandelbrotLib.dir/mandelbrot.c.o 

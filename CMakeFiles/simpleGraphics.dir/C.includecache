@@ -28,6 +28,16 @@ graphics_utilities.h
 xwindows_utilities.h
 /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h
 
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c
+graphics_utilities.h
+/home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.h
+mandelbrot.h
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
+
+/home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.h
+complex.h
+-
+
 /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c
 xwindows_utilities.h
 /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.h

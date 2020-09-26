@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mandelbrot.dir/main.c.o"
   "CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
+  "CMakeFiles/mandelbrot.dir/main.c.o"
   "CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
-  "mandelbrot.pdb"
+  "CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o"
   "mandelbrot"
+  "mandelbrot.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

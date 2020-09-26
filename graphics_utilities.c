@@ -43,6 +43,41 @@ rgb_image_t *read_ppm_rgb_file(char *filename){
     return image;
 }
 
+void write_rgb_file(char *filename,rgb_image_t *image) {
+
+    int i, j,im_ptr;
+    FILE *fp = fopen("First.ppm", "wb"); /* b - binary mode */
+    fprintf(fp, "P6\n%d %d\n255\n", image->image_size_x, image->image_size_y);
+    im_ptr =0;
+    for (j = 0; j < image->image_size_x; ++j) {
+        for (i = 0; i < image->image_size_y; ++i) {
+            static unsigned char color[3];
+            color[0] = image->image_data[im_ptr++];  /* red */
+            color[1] = image->image_data[im_ptr++];  /* green */
+            color[2] = image->image_data[im_ptr++];  /* blue */
+            fwrite(color, 1, 3, fp);
+        }
+    }
+    fclose(fp);
+}
+
+void write_rgb_pipe(rgb_image_t *image)
+{
+    int i, j,im_ptr;
+    FILE *fp = stdout;/* b - binary mode */
+    fprintf(fp, "P6\n%d %d\n255\n", image->image_size_x, image->image_size_y);
+    im_ptr =0;
+    for (j = 0; j < image->image_size_x; ++j) {
+        for (i = 0; i < image->image_size_y; ++i) {
+            static unsigned char color[3];
+            color[0] = image->image_data[im_ptr++];  /* red */
+            color[1] = image->image_data[im_ptr++];  /* green */
+            color[2] = image->image_data[im_ptr++];  /* blue */
+            fwrite(*color, 10, 3, fp);
+        }
+    }
+    fclose(fp);
+}
 
 rgb_image_t *read_ppm_rgb_pipe(){
 
@@ -56,16 +91,9 @@ rgb_image_t *read_ppm_rgb_pipe(){
 rgb_image_t *read_ppm_rgb_mandy(){
 
     rgb_image_t *image;
-    extern double mandelbrot_scale;
-    extern double mandelbrot_real_center;
-    extern double mandelbrot_imaginary_center;
-    char command[256+1]; // ASCIIZ is string\0
-    sprintf(command,
-            "~/CLionProjects/CS455_Mandelbrot/cmake-build-debug/mandelbrot -r%f -i%f -s%f",
-            mandelbrot_real_center,
-            mandelbrot_imaginary_center,
-            1.0*mandelbrot_scale);
-    FILE *fp = popen(command, "r");
+
+
+    FILE *fp = popen("cat First.ppm", "r");
     image = get_ppm(fp);
 
     pclose(fp);

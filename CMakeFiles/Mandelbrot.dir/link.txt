@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/Mandelbrot.dir/main.c.o CMakeFiles/Mandelbrot.dir/mandelbrot.c.o CMakeFiles/Mandelbrot.dir/graphics_utilities.c.o  -o Mandelbrot  -lX11 -lm /home/spada/CLionProjects/simpleGraphics/libsimpleGraphics.a 
