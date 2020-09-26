@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Mandelbrot.dir/graphics_utilities.c.o"
+  "CMakeFiles/Mandelbrot.dir/main.c.o"
   "CMakeFiles/Mandelbrot.dir/mandelbrot.c.o"
   "Mandelbrot"
   "Mandelbrot.pdb"

@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/spada/CLionProjects/Mandelbrot
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,17 +131,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Mandelbrot
+# Target rules for targets named mandelbrot
 
 # Build rule for target.
-Mandelbrot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mandelbrot
-.PHONY : Mandelbrot
+mandelbrot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mandelbrot
+.PHONY : mandelbrot
 
 # fast build rule for target.
-Mandelbrot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/build
-.PHONY : Mandelbrot/fast
+mandelbrot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+.PHONY : mandelbrot/fast
+
+graphics_utilities.o: graphics_utilities.c.o
+
+.PHONY : graphics_utilities.o
+
+# target to build an object file
+graphics_utilities.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.o
+.PHONY : graphics_utilities.c.o
+
+graphics_utilities.i: graphics_utilities.c.i
+
+.PHONY : graphics_utilities.i
+
+# target to preprocess a source file
+graphics_utilities.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.i
+.PHONY : graphics_utilities.c.i
+
+graphics_utilities.s: graphics_utilities.c.s
+
+.PHONY : graphics_utilities.s
+
+# target to generate assembly for a file
+graphics_utilities.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/graphics_utilities.c.s
+.PHONY : graphics_utilities.c.s
+
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/main.c.s
+.PHONY : main.c.s
 
 mandelbrot.o: mandelbrot.c.o
 
@@ -149,7 +203,7 @@ mandelbrot.o: mandelbrot.c.o
 
 # target to build an object file
 mandelbrot.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/mandelbrot.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.o
 .PHONY : mandelbrot.c.o
 
 mandelbrot.i: mandelbrot.c.i
@@ -158,7 +212,7 @@ mandelbrot.i: mandelbrot.c.i
 
 # target to preprocess a source file
 mandelbrot.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/mandelbrot.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.i
 .PHONY : mandelbrot.c.i
 
 mandelbrot.s: mandelbrot.c.s
@@ -167,8 +221,35 @@ mandelbrot.s: mandelbrot.c.s
 
 # target to generate assembly for a file
 mandelbrot.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/mandelbrot.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.s
 .PHONY : mandelbrot.c.s
+
+xwindows_utilities.o: xwindows_utilities.c.o
+
+.PHONY : xwindows_utilities.o
+
+# target to build an object file
+xwindows_utilities.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o
+.PHONY : xwindows_utilities.c.o
+
+xwindows_utilities.i: xwindows_utilities.c.i
+
+.PHONY : xwindows_utilities.i
+
+# target to preprocess a source file
+xwindows_utilities.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i
+.PHONY : xwindows_utilities.c.i
+
+xwindows_utilities.s: xwindows_utilities.c.s
+
+.PHONY : xwindows_utilities.s
+
+# target to generate assembly for a file
+xwindows_utilities.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s
+.PHONY : xwindows_utilities.c.s
 
 # Help Target
 help:
@@ -178,10 +259,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Mandelbrot"
+	@echo "... mandelbrot"
+	@echo "... graphics_utilities.o"
+	@echo "... graphics_utilities.i"
+	@echo "... graphics_utilities.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... mandelbrot.o"
 	@echo "... mandelbrot.i"
 	@echo "... mandelbrot.s"
+	@echo "... xwindows_utilities.o"
+	@echo "... xwindows_utilities.i"
+	@echo "... xwindows_utilities.s"
 .PHONY : help
 
 

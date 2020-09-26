@@ -63,10 +63,10 @@ RM = /home/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/spada/CLionProjects/CS455_Mandelbrot
+CMAKE_SOURCE_DIR = /home/spada/CLionProjects/Mandelbrot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/spada/CLionProjects/CS455_Mandelbrot
+CMAKE_BINARY_DIR = /home/spada/CLionProjects/Mandelbrot
 
 # Include any dependencies generated for this target.
 include CMakeFiles/simpleGraphics.dir/depend.make
@@ -77,87 +77,11 @@ include CMakeFiles/simpleGraphics.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/simpleGraphics.dir/flags.make
 
-CMakeFiles/simpleGraphics.dir/main.c.o: CMakeFiles/simpleGraphics.dir/flags.make
-CMakeFiles/simpleGraphics.dir/main.c.o: main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/simpleGraphics.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simpleGraphics.dir/main.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/main.c
-
-CMakeFiles/simpleGraphics.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/simpleGraphics.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/main.c > CMakeFiles/simpleGraphics.dir/main.c.i
-
-CMakeFiles/simpleGraphics.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/simpleGraphics.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/main.c -o CMakeFiles/simpleGraphics.dir/main.c.s
-
-CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o: CMakeFiles/simpleGraphics.dir/flags.make
-CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o: graphics_utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c
-
-CMakeFiles/simpleGraphics.dir/graphics_utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/simpleGraphics.dir/graphics_utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c > CMakeFiles/simpleGraphics.dir/graphics_utilities.c.i
-
-CMakeFiles/simpleGraphics.dir/graphics_utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/simpleGraphics.dir/graphics_utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c -o CMakeFiles/simpleGraphics.dir/graphics_utilities.c.s
-
-CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o: CMakeFiles/simpleGraphics.dir/flags.make
-CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o: xwindows_utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c
-
-CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c > CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.i
-
-CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c -o CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.s
-
-CMakeFiles/simpleGraphics.dir/mandelbrot.c.o: CMakeFiles/simpleGraphics.dir/flags.make
-CMakeFiles/simpleGraphics.dir/mandelbrot.c.o: mandelbrot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/simpleGraphics.dir/mandelbrot.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simpleGraphics.dir/mandelbrot.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c
-
-CMakeFiles/simpleGraphics.dir/mandelbrot.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/simpleGraphics.dir/mandelbrot.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c > CMakeFiles/simpleGraphics.dir/mandelbrot.c.i
-
-CMakeFiles/simpleGraphics.dir/mandelbrot.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/simpleGraphics.dir/mandelbrot.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c -o CMakeFiles/simpleGraphics.dir/mandelbrot.c.s
-
-# Object files for target simpleGraphics
-simpleGraphics_OBJECTS = \
-"CMakeFiles/simpleGraphics.dir/main.c.o" \
-"CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o" \
-"CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o" \
-"CMakeFiles/simpleGraphics.dir/mandelbrot.c.o"
-
-# External object files for target simpleGraphics
-simpleGraphics_EXTERNAL_OBJECTS =
-
-simpleGraphics: CMakeFiles/simpleGraphics.dir/main.c.o
-simpleGraphics: CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o
-simpleGraphics: CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o
-simpleGraphics: CMakeFiles/simpleGraphics.dir/mandelbrot.c.o
-simpleGraphics: CMakeFiles/simpleGraphics.dir/build.make
-simpleGraphics: CMakeFiles/simpleGraphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable simpleGraphics"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simpleGraphics.dir/link.txt --verbose=$(VERBOSE)
-
-# Rule to build all files generated by this target.
-CMakeFiles/simpleGraphics.dir/build: simpleGraphics
-
-.PHONY : CMakeFiles/simpleGraphics.dir/build
-
 CMakeFiles/simpleGraphics.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/simpleGraphics.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/simpleGraphics.dir/clean
 
 CMakeFiles/simpleGraphics.dir/depend:
-	cd /home/spada/CLionProjects/CS455_Mandelbrot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/simpleGraphics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spada/CLionProjects/Mandelbrot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot/CMakeFiles/simpleGraphics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/simpleGraphics.dir/depend
 

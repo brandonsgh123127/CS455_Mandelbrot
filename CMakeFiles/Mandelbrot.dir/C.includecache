@@ -6,33 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/spada/CLionProjects/Mandelbrot/mandelbrot.c
+/home/spada/CLionProjects/Mandelbrot/graphics_utilities.c
 graphics_utilities.h
 /home/spada/CLionProjects/Mandelbrot/graphics_utilities.h
-xwindows_utilities.h
-/home/spada/CLionProjects/Mandelbrot/xwindows_utilities.h
-mandelbrot.h
-/home/spada/CLionProjects/Mandelbrot/mandelbrot.h
-stdlib.h
--
-error.h
--
-complex.h
--
-stdio.h
--
-argp.h
--
 
-/home/spada/CLionProjects/Mandelbrot/mandelbrot.h
-complex.h
--
-graphics_utilities.h
 /home/spada/CLionProjects/Mandelbrot/graphics_utilities.h
-xwindows_utilities.h
-/home/spada/CLionProjects/Mandelbrot/xwindows_utilities.h
-
-/home/spada/CLionProjects/simpleGraphics/graphics_utilities.h
 math.h
 -
 stdio.h
@@ -41,18 +19,4 @@ stdlib.h
 -
 string.h
 -
-
-/home/spada/CLionProjects/simpleGraphics/xwindows_utilities.h
-X11/Xlib.h
--
-X11/Xutil.h
--
-X11/Xos.h
--
-stdlib.h
--
-math.h
--
-graphics_utilities.h
-/home/spada/CLionProjects/simpleGraphics/graphics_utilities.h
 

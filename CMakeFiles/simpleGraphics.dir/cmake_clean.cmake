@@ -1,13 +1,5 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/simpleGraphics.dir/graphics_utilities.c.o"
-  "CMakeFiles/simpleGraphics.dir/main.c.o"
-  "CMakeFiles/simpleGraphics.dir/mandelbrot.c.o"
-  "CMakeFiles/simpleGraphics.dir/xwindows_utilities.c.o"
-  "simpleGraphics"
-  "simpleGraphics.pdb"
-)
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
+foreach(lang )
   include(CMakeFiles/simpleGraphics.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

@@ -63,10 +63,10 @@ RM = /home/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/spada/CLionProjects/CS455_Mandelbrot
+CMAKE_SOURCE_DIR = /home/spada/CLionProjects/Mandelbrot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/spada/CLionProjects/CS455_Mandelbrot
+CMAKE_BINARY_DIR = /home/spada/CLionProjects/Mandelbrot
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mandelbrot.dir/depend.make
@@ -79,73 +79,74 @@ include CMakeFiles/mandelbrot.dir/flags.make
 
 CMakeFiles/mandelbrot.dir/main.c.o: CMakeFiles/mandelbrot.dir/flags.make
 CMakeFiles/mandelbrot.dir/main.c.o: main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mandelbrot.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/main.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mandelbrot.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/main.c.o   -c /home/spada/CLionProjects/Mandelbrot/main.c
 
 CMakeFiles/mandelbrot.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/main.c > CMakeFiles/mandelbrot.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/Mandelbrot/main.c > CMakeFiles/mandelbrot.dir/main.c.i
 
 CMakeFiles/mandelbrot.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/main.c -o CMakeFiles/mandelbrot.dir/main.c.s
-
-CMakeFiles/mandelbrot.dir/graphics_utilities.c.o: CMakeFiles/mandelbrot.dir/flags.make
-CMakeFiles/mandelbrot.dir/graphics_utilities.c.o: graphics_utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/graphics_utilities.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c
-
-CMakeFiles/mandelbrot.dir/graphics_utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/graphics_utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c > CMakeFiles/mandelbrot.dir/graphics_utilities.c.i
-
-CMakeFiles/mandelbrot.dir/graphics_utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/graphics_utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/graphics_utilities.c -o CMakeFiles/mandelbrot.dir/graphics_utilities.c.s
-
-CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o: CMakeFiles/mandelbrot.dir/flags.make
-CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o: xwindows_utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c
-
-CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c > CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i
-
-CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/xwindows_utilities.c -o CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/Mandelbrot/main.c -o CMakeFiles/mandelbrot.dir/main.c.s
 
 CMakeFiles/mandelbrot.dir/mandelbrot.c.o: CMakeFiles/mandelbrot.dir/flags.make
 CMakeFiles/mandelbrot.dir/mandelbrot.c.o: mandelbrot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/mandelbrot.c.o   -c /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/mandelbrot.c.o   -c /home/spada/CLionProjects/Mandelbrot/mandelbrot.c
 
 CMakeFiles/mandelbrot.dir/mandelbrot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/mandelbrot.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c > CMakeFiles/mandelbrot.dir/mandelbrot.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/Mandelbrot/mandelbrot.c > CMakeFiles/mandelbrot.dir/mandelbrot.c.i
 
 CMakeFiles/mandelbrot.dir/mandelbrot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/mandelbrot.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/CS455_Mandelbrot/mandelbrot.c -o CMakeFiles/mandelbrot.dir/mandelbrot.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/Mandelbrot/mandelbrot.c -o CMakeFiles/mandelbrot.dir/mandelbrot.c.s
+
+CMakeFiles/mandelbrot.dir/graphics_utilities.c.o: CMakeFiles/mandelbrot.dir/flags.make
+CMakeFiles/mandelbrot.dir/graphics_utilities.c.o: graphics_utilities.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mandelbrot.dir/graphics_utilities.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/graphics_utilities.c.o   -c /home/spada/CLionProjects/Mandelbrot/graphics_utilities.c
+
+CMakeFiles/mandelbrot.dir/graphics_utilities.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/graphics_utilities.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/Mandelbrot/graphics_utilities.c > CMakeFiles/mandelbrot.dir/graphics_utilities.c.i
+
+CMakeFiles/mandelbrot.dir/graphics_utilities.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/graphics_utilities.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/Mandelbrot/graphics_utilities.c -o CMakeFiles/mandelbrot.dir/graphics_utilities.c.s
+
+CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o: CMakeFiles/mandelbrot.dir/flags.make
+CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o: xwindows_utilities.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spada/CLionProjects/Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o   -c /home/spada/CLionProjects/Mandelbrot/xwindows_utilities.c
+
+CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/spada/CLionProjects/Mandelbrot/xwindows_utilities.c > CMakeFiles/mandelbrot.dir/xwindows_utilities.c.i
+
+CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/spada/CLionProjects/Mandelbrot/xwindows_utilities.c -o CMakeFiles/mandelbrot.dir/xwindows_utilities.c.s
 
 # Object files for target mandelbrot
 mandelbrot_OBJECTS = \
 "CMakeFiles/mandelbrot.dir/main.c.o" \
+"CMakeFiles/mandelbrot.dir/mandelbrot.c.o" \
 "CMakeFiles/mandelbrot.dir/graphics_utilities.c.o" \
-"CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o" \
-"CMakeFiles/mandelbrot.dir/mandelbrot.c.o"
+"CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o"
 
 # External object files for target mandelbrot
 mandelbrot_EXTERNAL_OBJECTS =
 
 mandelbrot: CMakeFiles/mandelbrot.dir/main.c.o
+mandelbrot: CMakeFiles/mandelbrot.dir/mandelbrot.c.o
 mandelbrot: CMakeFiles/mandelbrot.dir/graphics_utilities.c.o
 mandelbrot: CMakeFiles/mandelbrot.dir/xwindows_utilities.c.o
-mandelbrot: CMakeFiles/mandelbrot.dir/mandelbrot.c.o
 mandelbrot: CMakeFiles/mandelbrot.dir/build.make
+mandelbrot: /home/spada/CLionProjects/simpleGraphics/libsimpleGraphics.a
 mandelbrot: CMakeFiles/mandelbrot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable mandelbrot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spada/CLionProjects/Mandelbrot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable mandelbrot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mandelbrot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +159,6 @@ CMakeFiles/mandelbrot.dir/clean:
 .PHONY : CMakeFiles/mandelbrot.dir/clean
 
 CMakeFiles/mandelbrot.dir/depend:
-	cd /home/spada/CLionProjects/CS455_Mandelbrot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot /home/spada/CLionProjects/CS455_Mandelbrot/CMakeFiles/mandelbrot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spada/CLionProjects/Mandelbrot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot /home/spada/CLionProjects/Mandelbrot/CMakeFiles/mandelbrot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mandelbrot.dir/depend
 

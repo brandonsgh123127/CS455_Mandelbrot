@@ -115,7 +115,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Mandelbrot
+CMAKE_PROJECT_NAME:STATIC=mandelbrot
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -169,11 +169,17 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a library.
+Mandelbrot:FILEPATH=Mandelbrot-NOTFOUND
+
 //Value Computed by CMake
 Mandelbrot_BINARY_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 
 //Value Computed by CMake
 Mandelbrot_SOURCE_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
+
+//Path to a library.
+Mendelbrot:FILEPATH=Mendelbrot-NOTFOUND
 
 //Value Computed by CMake
 graphics_utilities_BINARY_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
@@ -181,17 +187,41 @@ graphics_utilities_BINARY_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 //Value Computed by CMake
 graphics_utilities_SOURCE_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 
+//Path to a library.
+libsimpleGraphics:FILEPATH=/home/spada/CLionProjects/simpleGraphics/libsimpleGraphics.a
+
 //Value Computed by CMake
 mandelbrot_BINARY_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 
 //Value Computed by CMake
 mandelbrot_SOURCE_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 
+//Path to a library.
+simpleGraphic:FILEPATH=simpleGraphic-NOTFOUND
+
+//Path to a library.
+simpleGraphicLib:FILEPATH=simpleGraphicLib-NOTFOUND
+
+//Path to a library.
+simpleGraphics:FILEPATH=simpleGraphics-NOTFOUND
+
+//Path to a library.
+simpleGraphicsLib:FILEPATH=simpleGraphicsLib-NOTFOUND
+
+//Path to a library.
+simpleGraphicsLibrary:FILEPATH=simpleGraphicsLibrary-NOTFOUND
+
 //Value Computed by CMake
 simpleGraphics_BINARY_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
 
+//Dependencies for the target
+simpleGraphics_LIB_DEPENDS:STATIC=general;~/CLionProjects/simpleGraphics/graphics_utilities.h;
+
 //Value Computed by CMake
 simpleGraphics_SOURCE_DIR:STATIC=/home/spada/CLionProjects/Mandelbrot
+
+//Path to a library.
+test:FILEPATH=test-NOTFOUND
 
 
 ########################
