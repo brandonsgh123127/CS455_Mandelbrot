@@ -76,7 +76,8 @@ static struct argp argp = { options, parse_opt, args_doc, doc};
 
 rgb_image_t * main(int argc, char **argv)
 {
-    rgb_image_t * image;
+    struct rgb_image img;
+    rgb_image_t * image = &img;
     x_event_t mouse_event;
     struct arguments arguments;
 
@@ -123,7 +124,7 @@ rgb_image_t * main(int argc, char **argv)
         printf("%f, %f,%f\n",mandelbrot_real_center,mandelbrot_imaginary_center,mandelbrot_scale);
         // here we will popen mandelbrot to get a new image
         image = read_ppm_rgb_mandy(mandelbrot_real_center,mandelbrot_imaginary_center,mandelbrot_scale);
-        //image = calculate_mandelbrot(mandelbrot_real_center,mandelbrot_imaginary_center,mandelbrot_scale,*arguments.output_file,512);
+        image = calculate_mandelbrot(mandelbrot_real_center,mandelbrot_imaginary_center,mandelbrot_scale,*arguments.output_file,512,100);
         display_image(image);
         // parse_input_args
         double center = -0.5-0.0i;

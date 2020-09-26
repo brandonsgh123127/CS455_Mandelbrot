@@ -21,6 +21,7 @@ rgb_image_t * calculate_mandelbrot(double complex center,
                                    double complex imaginary,
                                    double scale,
                                    char *out,
-                                   int n);
+                                   int n,
+                                   int max_iteration);
 
 #endif //MANDELBROT_MANDELBROT_H
