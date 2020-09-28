@@ -94,8 +94,8 @@ int process_event(x_event_t *event_data){
     XEvent event;		/* the XEvent declaration !!! */
     KeySym key;		/* a dealie-bob to handle KeyPress Events */
     char text[255];		/* a char buffer for KeyPress Events */
-    event_data->mouse_x=0.5;
-    event_data->mouse_y=0.5;
+    event_data->mouse_x=127;
+    event_data->mouse_y=127;
     event_data->button=0;
     XNextEvent(dis, &event);
 

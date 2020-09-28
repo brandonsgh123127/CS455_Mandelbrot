@@ -6,9 +6,9 @@
 #include "graphics_utilities.h"
 
 extern double mandelbrot_real_center = -0.5;
-extern double mandelbrot_imaginary_center=0.0;
+extern double mandelbrot_imaginary_center=1.0;
 extern double mandelbrot_scale = 1.0;
-extern  double mandelbrot_radius = 2;
+extern  double mandelbrot_radius = 1;
 
 rgb_image_t * calculate_mandelbrot(double complex center,
                                    double complex imaginary,

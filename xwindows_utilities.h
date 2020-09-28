@@ -18,7 +18,6 @@
 #define mouse_scroll_forward 4
 #define mouse_scroll_backward 5
 
-
 typedef struct x_event {
     unsigned int mouse_x;
     unsigned int mouse_y;
