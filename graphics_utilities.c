@@ -55,7 +55,7 @@ void write_rgb_file(char *filename,rgb_image_t *image) {
             color[0] = image->image_data[im_ptr++];  /* red */
             color[1] = image->image_data[im_ptr++];  /* green */
             color[2] = image->image_data[im_ptr++];  /* blue */
-            fwrite(color, 1, 3, fp);
+            fwrite(color, 3, 8, fp);
         }
     }
     fclose(fp);
@@ -74,6 +74,24 @@ void write_rgb_pipe(rgb_image_t *image)
             color[1] = image->image_data[im_ptr++];  /* green */
             color[2] = image->image_data[im_ptr++];  /* blue */
             fwrite(*color, 10, 3, fp);
+        }
+    }
+    fclose(fp);
+}
+/*
+ * Write PGM File- max 16 bit per pixel
+ */
+void write_grayscale_file(char *filename,rgb_image_t *image) {
+    int i, j,im_ptr;
+    FILE *fp = fopen(filename, "wb"); /* b - binary mode */
+    fprintf(fp, "P6\n%d %d\n255\n", image->image_size_x, image->image_size_y);
+    im_ptr =0;
+    for (j = 0; j < image->image_size_x; ++j) {
+        for (i = 0; i < image->image_size_y; ++i) {
+            static unsigned char color[1];
+            color[0] =  (0.2126*pow((image->image_data[im_ptr++]/255),2.2)) + 0.7152* pow((image->image_data[im_ptr++]/255),2.2) + 0.0722*pow((image->image_data[im_ptr++]/255),2.2);
+            color[0] = color[0] < 0.0031308?12.92*color[0]:1.055*pow(color[0],1/2.4)-0.055;;
+            fwrite(color, 1, 5, fp);
         }
     }
     fclose(fp);
