@@ -35,7 +35,7 @@ void hsv_to_rgb(int hue, int min, int max, rgb_t *p)
     }
 }
 
-rgb_image_t *read_ppm_rgb_file(char *filename){
+rgb_image_t *read_pgm_file(char *filename){
     FILE * fp = fopen( filename, "r");
     if (fp == NULL) return NULL;
     rgb_image_t *image;
@@ -46,7 +46,7 @@ rgb_image_t *read_ppm_rgb_file(char *filename){
 void write_rgb_file(char *filename,rgb_image_t *image) {
 
     int i, j,im_ptr;
-    FILE *fp = fopen("First.ppm", "wb"); /* b - binary mode */
+    FILE *fp = fopen(filename, "wb"); /* b - binary mode */
     fprintf(fp, "P6\n%d %d\n255\n", image->image_size_x, image->image_size_y);
     im_ptr =0;
     for (j = 0; j < image->image_size_x; ++j) {
@@ -55,7 +55,7 @@ void write_rgb_file(char *filename,rgb_image_t *image) {
             color[0] = image->image_data[im_ptr++];  /* red */
             color[1] = image->image_data[im_ptr++];  /* green */
             color[2] = image->image_data[im_ptr++];  /* blue */
-            fwrite(color, 3, 8, fp);
+            fwrite(color, 3, 1, fp);
         }
     }
     fclose(fp);
@@ -73,7 +73,7 @@ void write_rgb_pipe(rgb_image_t *image)
             color[0] = image->image_data[im_ptr++];  /* red */
             color[1] = image->image_data[im_ptr++];  /* green */
             color[2] = image->image_data[im_ptr++];  /* blue */
-            fwrite(*color, 10, 3, fp);
+            fwrite(color, 3, 1, fp);
         }
     }
     fclose(fp);
@@ -81,7 +81,7 @@ void write_rgb_pipe(rgb_image_t *image)
 /*
  * Write PGM File- max 16 bit per pixel
  */
-void write_grayscale_file(char *filename,rgb_image_t *image) {
+FILE* write_grayscale_pipe(char *filename,rgb_image_t *image) {
     int i, j,im_ptr;
     FILE *fp = fopen(filename, "wb"); /* b - binary mode */
     fprintf(fp, "P6\n%d %d\n255\n", image->image_size_x, image->image_size_y);
@@ -95,6 +95,7 @@ void write_grayscale_file(char *filename,rgb_image_t *image) {
         }
     }
     fclose(fp);
+    return fp;
 }
 
 rgb_image_t *read_ppm_rgb_pipe(){
@@ -111,8 +112,29 @@ rgb_image_t *read_ppm_rgb_mandy(){
     rgb_image_t *image;
 
 
-    FILE *fp = popen("cat First.ppm", "r");
+    FILE *fp = popen("cat Mandy.ppm", "r");
     image = get_ppm(fp);
+    // Retrieve coordinate vals
+
+    pclose(fp);
+
+    return image;
+}
+rgb_image_t *read_pgm_mandy(){
+
+    rgb_image_t *image;
+    extern double mandelbrot_scale;
+    extern double mandelbrot_real_center;
+    extern double mandelbrot_imaginary_center;
+
+    char command[256];
+    sprintf(command,"~/CLionProjects/mandelbrot/cmake-build-debug/mandelbrot -r%f -i%f -s%f",
+                     mandelbrot_real_center,
+                     mandelbrot_imaginary_center,
+                     mandelbrot_scale);
+    FILE *fp = popen(command,"r");
+    image = get_ppm(fp);
+    // Retrieve coordinate vals
 
     pclose(fp);
 

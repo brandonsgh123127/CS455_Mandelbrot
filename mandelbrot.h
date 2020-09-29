@@ -20,7 +20,6 @@ unsigned int iterations(double complex p0,unsigned int max_iteration);
 rgb_image_t * calculate_mandelbrot(double complex center,
                                    double complex imaginary,
                                    double scale,
-                                   char *out,
                                    int n,
                                    int max_iteration);
 

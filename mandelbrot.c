@@ -13,7 +13,6 @@ extern  double mandelbrot_radius = 1;
 rgb_image_t * calculate_mandelbrot(double complex center,
                                    double complex imaginary,
                                    double scale,
-                                   char *out,
                                    int n,
                                    int max_iteration)
 {
