@@ -123,7 +123,6 @@ void main(int argc, char **argv) {
     if (isatty(fileno(stdout))) {
         write_rgb_file("Mandy.ppm", image);
         write_rgb_pipe(image);
-
     }
     else {
         write_rgb_pipe(image);
